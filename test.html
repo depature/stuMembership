@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>系统统计</title>
+    <!-- 引入 echarts.js -->
+    <script src="https://cdn.bootcss.com/echarts/3.5.4/echarts.js"></script>  
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>   
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+       var mCharts=echarts.init(document.getElementById("main"))
+       var pieData=[
+           {
+               name:'团员',
+               value:2
+           },
+           {
+               name:'入党积极分子',
+               value:2
+           },
+           {
+               name:'预备党员',
+               value:3
+           },
+           {
+               name:'正式党员',
+               value:1
+           },
+       ]
+    var option={
+        series:[
+            {type: 'pie',
+            data:pieData    
+        }
+        ]
+    }
+    mCharts.setOption(option)
+    </script>
+</body>
+</html>

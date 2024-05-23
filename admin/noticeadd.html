@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>发布通知</title>
+</head>
+    <body>
+    <form action="noticeadd.php" method="post">
+    <div class="mb-3 mt-3">
+      <label for="theme" class="form-label">主题:</label>
+      <input type="text" class="form-control" id="theme"  name="theme"> 
+    </div>
+    <div class="mb-3">
+        <label for="name" class="form-label">发布者:</label>
+        <input type="text" class="form-control" id="name"  name="name">
+      </div>
+    <div class="input-group">
+        <span class="input-group-text">内容</span>
+        <textarea class="form-control" aria-label="With textarea" name="content" style="height: 400px;"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">发布通知</button>
+  </form>  
+    </body>
+    </html>
